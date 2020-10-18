@@ -1,0 +1,237 @@
+\\\\Chat Filter Regex v1.2 date 10-18-2020\\\\
+\\\\https://github.com/ProudAnimeMom/runelite-chat-filter-list\\\\
+
+\\\\Modify any section you'd like\\\\
+\\\\Paste into runelite chat filter "filtered regex"\\\\
+\\\\Select filter Type "Remove message"\\\\
+
+\\\\Experimental/Strong! Remove backslashes to enable\\\\
+
+(?i)\\\\discord\.gg\/
+\\\\removes all discord links\\\\
+
+(?i)\\\\free\s?g(p|old)\W
+\\\\removes all "free gold/gp!/?"\\\\
+
+(?i)\\\\(cc|clan)(chat)?.*join\W?\s?\W?\w
+(?i)\\\\join.*?(cc|clan)(chat)?
+(?i)\\\\24\W7\s?[\w\W]*(clan|cc|chat)
+\\\\removes many clan chat ads\\\\
+
+\\\\ Begging \\\\
+
+(?i)^(can|need) someone (to )?donate
+(?i)(any\s?(1|one|body)) have (junk|items|free)
+(?i)^trading up .*?
+(?i)(accepting|taking|need)\s?(any)?\s?(and|\&)?\s?(all)?\s?(donations?|items?)
+(?i)can (some?|any)\s?(1|one|body).*?(donate|give|spare|gimme) (me|my)?\s?\d*[kmb]\s?(g(\sp|old)|money|items?|cash)?
+(?i)can someone help a noob
+(?i)can (some?|any)\s?(1|one|body).*?(doubl|tripl)e (me|my) \d+\s?[gkm]
+(?i)could use help with a bond
+(?i)help me*\s?(please)?\d*?\.?\d*?[kmb]?\s?(for|with) bond
+(?i)^(taking|accepting)\s?(all)?\s?junk
+(?i)^(taking|accepting) bond
+(?i)^i need (gp|gold|money|items?) (please|pl(s|z))
+(?i)(can )?(any\s?(1|one) )?(doubl|tripl)(e( my)?|ing) ((g(\sp|old)|money|items?).*?((\d+\s?[gkm] left|or (g(\sp|old)|money|items?))|up\s?to\s?\d+\s?[gkm])|((till )?\d+\s?[gkm]|g(\sp|old)|money|items?))
+(?i)(can )?any\s?(1|one) (willing to |trade )?(doubl|tripl)(e|ing)
+(?i)any\s(1|one) (spare |help with )((a )?(g(\sp|old)|money|items?|bond)|some junk)
+(?i)i just got (scammed|hacked)
+(?i)i'?m a noob,?\s?can someone help
+(?i)please need \d+\s?[gkm]( i'?m new)?
+(?i)taking unwanted junk
+(?i)trading up \d+\s?[gkm]
+(?i)need free (g(\sp|old)|money|items?)
+(?i)jokes? for [\w\W]*\d*[km]
+(?i)with a funny joke
+(?i)buy me a bond
+(?i)pl(s|z|ease) \d*\.?\d*?[kmb]
+(?i)^donate for
+(?i)^dancing for g(p|old)
+(?i)^i?\s?need money for
+(?i)will be rs (g|b)f for
+(?i)\d*\.?\d*?[kmb]?\s?(gp|gold)?\s?to own me
+(?i)i\'?d?\s?(would)?\s?make a good (b|g)f for \d
+(?i)own me for \d
+(?i)steal me from my (b|g)f for \d
+
+\\\\ Trade Bots \\\\
+
+(?i)^spending \d*(m|b).*?(valuable|no junk)
+(?i)^\d*\.?\d*?[gkmb]?\s?(gp|coins?)? for\?
+(?i)^bond\s?(for)?\s?sale
+
+\\\ PSA Autotypers \\\\
+
+(?i)\[Beware\]
+(?i)Barb\WOutpost/Shanty.pass/Rogues.Den not safe
+(?i)Lurers to ignore:
+(?i)^do not attempt to antiscam
+(?i)^.*is a lurer
+
+\\\\ Trade Ads\\\\
+
+(?i)(buy(ing)?|(doe?s?\s|can\s)?(no|some|any)\s?(one|body)\s?(ha(ve|s)|got)?|looking|sells? me|i pay|paying)\s?\d*?[kbm]?\W?(for)?\s?(sale|sell\s?m?e?)?\s?(now)?\s?a?(ny)?\s?(some)?\s?(cool)?\s?(rune se?t|scithe|bond|3rd age|armadyl|ancestral|(ghrazier )?rapier|bandos\s?(set)?|dhcb|dragon\s?hunter (crossbow|lance)|max (melee|gear)|dharok|saradomin godsword|armadyl chestplate|dragon claws|t(wisted)? bow|tbow|(elysian|arcane|spectral) spirit shield|elysian|dragon war\s?hammer|dwh|kodai\s?(wand)?|(red|black)?\s?chins?|scythe|sang(uinesti)? staff|staff of balance)
+(?i)(no\s?(one|body) (has|haves?|is sell(ing)?)|need)\s?(rune se?t|scithe|bond|3rd age|armadyl|ancestral|(ghrazier )?rapier|bandos\s?(set)?|dhcb|dragon\s?hunter (crossbow|lance)|max (melee|gear)|dharok|saradomin godsword|armadyl chestplate|dragon claws|t(wisted)? bow|tbow|(elysian|arcane|spectral) spirit shield|elysian|dragon war\s?hammer|dwh|kodai\s?(wand)?|(red|black)?\s?chins?|scythe|sang(uinesti)? staff|staff of balance)(asap)?.*?(I will pay|sell me)
+(?i)buy(ing)? all valuable items?
+(?i)^spending\s?\d*\.?\d*?[kmb]
+(?i)^i will buy all (items?|junk)
+(?i)^selling.*?bulk
+(?i)^buying bulk
+(?i)^sell(ing)?\s*?bank
+(?i)selling \d{1,3} (trouts?|salmone?s?|tunas?|logs?)
+(?i)^buying [\w\W]* burnt food
+(?i)^sell(ing)? (dart tips|all runes|feathers)
+(?i)^buying max (ge)?\s?limits?
+(?i)^staking all (lvls?|levels?)
+
+\\\\ CC/Swap/Services/Giveaway Ads \\\\
+
+(?i)^(live)?\s*?\d*?\.?\d*?[mkb]?\s?(dp|drop party)
+(?i)^follow.*?for\s*?\d*?\.?\d*?[mkb]?\s?(dp|drop party)
+(?i)(\[|\(|\{)\s?(RC Swap)\s?(\]|\)|\})
+(?i)discord\.gg\/(stamina|hadesgp)
+(?i)(clan|cc|join|chat).*(frostbez|rc swap|darkturbo|pregnant|frostbetscc|blue bible)
+(?i)(frostbez|rc swap|darkturbo|pregnant).*(clan|cc)
+(?i)looking for .*?(clan|cc)(chat)?\?
+(?i)biggest \w* (clan|cc)
+(?i)\#1[\w\W]*(cc|clan)
+(?i)(come|join|in) \"relax\"
+(?i)Tired of skilling \& Questing\?
+(?i)swap safely.*?trusted
+(?i)most trusted swap clan
+(?i)(exchange|swap.*?) ((rs3.*?|eoc.*?)|07|osrs|os) (g(\sp|old)|money|items?)
+(?i)(join.*?)?most trusted.*?(g\s?p |gold )?swap (cc|clan chat)
+(?i)join\s?([\[\({].*?swap.*?[\]\)}]|>>.*?<<.*?most trusted|.*?check forums|.*?for daily rewards|.*?most trusted.*?swap cc)
+(?i)trusted exchange service.*?swap
+(?i)swap(ing)?.*?rs3\/07(\/dmm) g(p|old)
+(?i)want to transfer your (rs3\/07|07\/rs3)
+(?i)firecape & acc
+(?i)s\s*e\s*l\s*l\s*r\s*s\s*0\s*7
+(?i)se[l1][l1]i?n?g?\s?\s?g\s?[o0]\s?[l1]\s?d
+(?i)se11 g01d & a\(\(.*?1oook\s?\/\s?o\.\d.?u.?s.?d
+(?i)swap your ((07|d\.?m\.?m|rs3)\s?\/\s?(07|d\.?m\.?m|rs3)\s?\/\s?(07|d\.?m\.?m|rs3))\s?(g(\s?p|old)|money|items?)
+(?i)bypass g\.e limits at [\[\({].*?[\]\)}] cc
+(?i)join runescape'?s most trusted
+(?i)[s ][a ][l ][e ]\s?g[o|0][l|1]d\s?&\s?a[c|\[][c|\[]
+(?i)[\[\({]automated[\]\)}].*?x\d+.*?[\[\({]\d+\s?[gkm]-\d+\s?[gkm]
+(?i)^a place for old school\W\s?new school\W\s?free\s?g(p|old)
+
+(?i)follow to win \d
+(?i)live results, raffles and giveaways
+(?i)\d+\s?[gkm]\+?(07)?\s?give\s?aways?
+(?i)daily.*?(give\s?aways?|drop\s?parties)
+(?i)discord.*?free \d+\s?[gkm].*?give\s?aways?
+(?i)given away every hour
+(?i)huge give\s?aways?.*?(twitch\/?t?v?|youtube)\s?\/
+(?i)j?o?i?n?.*?\d+\s?(\s?[gkm]|million) give\s?aways?
+(?i)rewarding players \d+\s?[gkm].*?(twitch|youtube)
+(?i)weekly.*?earn up to \d+\s?[gkm] o?s?r?s? g(\s?p|old)
+(?i)(rewarding|win) \d+\s?[gkm](il)?.*?youtube
+(?i)winners .*?search\s+youtube
+(?i)(giveaway|reward(ing)?).*?search (on )?y[o0]utube
+(?i)search [\w\W]*(on)? f[a\@]ceb[o0]*k
+(?i)(search on )?(tw[i1]tch(\/tv)?|y[o0]utube)(.*?win \d+\s?[gkm]|.*?give\s?aways?)
+(?i)search\s?(on)?y[o0]utube[\w\W]* to (enter|win)
+(?i)\!discs?ord
+\\\\ Gambling \\\
+(?i)\(\!D\)ice
+(?i)(\(|\{)\w*?\s?\![A-z]*(\)|\})
+(?i)\d+\s?[gkm].*?roll \d{2}+
+(?i)^game id\:
+(?i)has (lost|won) slots
+(?i)has cashed in
+(?i)staking.*?blackjack.*?dicing.*?discord
+(?i)join ([\[\({])?discord.*?(gamble today|flower games)
+(?i)commission staking.*?discord
+(?i)(best|come play).*?rsps
+(?i)c\s?[o0]\s?m.*?bet g(\s?p|old)
+(?i) bet is between \d+\s?[gkm]\s?-\s?\d+\s?[gkm]
+(?i)^.*? has rec(ei|ie)ved: \d+\s?[gkm]\s?$
+(?i)^.*? lost.*? with a \d+\s?$
+(?i)^.*? wins! \d+\s?[gkm] with a \d+\s?$
+(?i)^\s?big wins.*?\(\d+\s?[gkm]\s?(to|2|-)\s?\d+\s?[gkm]\)
+(?i)[\[\({]lose[\]\)}] rolled.*?unlucky
+(?i)[\[\({]win[\]\)}] rolled [\[\({]\d+[\]\)}]
+(?i)1-100 [\[\({]over \d+[\]\)}].*? win double
+(?i)dicing.*?(dice|flower) games?
+(?i)\d{2}\s?-\s?100.*?\d+\s?[gkm] min
+(?i)original host.*?\d+\s?[gkm] min
+(?i)\d{2}x\d.*?\d+\s?[gkm] min
+(?i)drop parties.*?give\s?aways?.*?dice games?
+(?i)goodie bag.*?choose a number
+(?i)has (been paid.*?\d+\s?[gkm]|(lost.*?|won.*?[\[\({]\d+\s?[gkm].*?)with a roll)
+(?i)has (lost|won) (\d+\s?[gkm])? with a roll of
+(?i)has rec(ei|ie)ved .*? win.*? \d+\s?[gkm]
+(?i)has rolled an? [\[\({]\s?\d+\s?[\]\)}] and (has )?(lost|won)( the pot of [\[\({]\d+(\.\d+)?\s?[gkm]|.*?[\[\({]\d{2}:\d{2}:\d{2}[\]\)}])
+(?i)[\[\({]\d+\s?[gkm](\s?min)?[\]\)}].*?trade to play
+(?i)has traded [\[\({]\d+(\.\d+)?\s?[gkm].*?[\[\({]\d{2}:\d{2}:\d{2}[\]\)}]
+(?i)hosting.*?\d+\s?[gkm] min
+(?i)(huge|massive) payouts?.*?\(\d+\s?[gkm] to \d+\s?[gkm]
+(?i)next \d+.*?win \d+\s?[gkm]
+(?i)original rng is back.*?\(\d+\s?[gkm] to \d+\s?[gkm]
+(?i)^want to bet.*? (gold|gp|coins|money)
+(?i)over 5\d .*?\d+\s?[gkm] min.*?(legit|quick plays?)
+(?i)random 1-100 .*?win double .*?[\[\({]\d+\s?[gkm]-\d+\s?[gkm][\]\)}]
+(?i)rolled [\[\({]\s?\d+\s?[\]\)}].*?[\[\({]\s?(lose|win)\s?[\]\)}]
+(?i)time limit reached, declining
+(?i)trade accepted for .*?amount
+(?i)you only need to trade.*?current queue.*?[\[\({]\d+[\]\)}]
+(?i)won [\[\({]\s?\d+\s?[gkm]\s?[\]\)}] by rolling [\[\({]\s?\d+\s?[\]\)}]
+(?i) lost by rolling [\[\({]\s?\d+\s?[\]\)}]
+(?i)big payouts.*?[\[\({]\s?\d+\s?[gkm]\s?-\s?\d+\s?[gkm]\s?[\]\)}]
+(?i)big win.*?[\[\({]?\s?\d+\s?[gkm]\s?-\s?\d+\s?[gkm]\s?[\]\)}]? [\[\({]\s?\d+\s?\+\s?[\]\)}]
+(?i)^trade accepted.*?[\[\({]\s?\d+\s?[gkm]\s?[\]\)}]
+(?i)lost by rolling [\[\({]\s?\d+\s?[\]\)}]
+(?i)\d+\s?[gkm] minimum.*?\d{2}:\d{2}:\d{2}
+(?i)[\[\({]\s?\d+\s?[gkm]\s?min\s?[\]\)}]\s?[\[\({]\s?roll\s?\d\s?\d\s?\+\s?[\]\)}]
+(?i)0\s?-\s?100.*?\d+\s?[gkm]\s?-\s?\d+\s?[gkm].*?paid out
+(?i)(giving|next) \d+ players (win )?\d+\s?[gkm]
+(?i)\d+ lucky participants will win \d+\s?[gkm]
+(?i)(^| )5\d\s?-\s?100\s?=\s?w\s?i\s?n.*?\d+\s?[gkm] (to|too|2|-) \d+\s?[gkm]
+(?i)(legit.*?)?dice game(.*?trusted.*?huge payouts?)?
+(?i)\(\d+\s?[gkm] - \d+\s?[gkm]\).*?[\[\({]?\d{2}:\d{2}:\d{2}[\]\)}]?
+(?i)\(\d+\s?[gkm] - \d+\s?[gkm]\).*?trade to play.*?[\[\({]\d{2}:\d{2}:\d{2}[\]\)}]
+(?i)[\[\({].*?[\]\)}] - [\[\({]\d+\s?[gkm][\]\)}] bet
+(?i)[\[\({]\d+\s?[gkm] min[\]\)}] - [\[\({]\d+\s?[gkm] max[\]\)}]
+(?i)[\[\({]\d+\s?[gkm][\]\)}] paid
+(?i)(join|crazy winnings?!?).*?\d+\s?[gkm] min.*?roll \d{2}+
+(?i)\W{1,2}superhost\d{1,4}
+(?i)^automated host\s?\W
+(?i)\@ [\[\(]\d*\:\d\d\:\d\d[\]\)]
+(?i)^\#1 (casino|gambling)
+(?i)rune(bet|chat) cu0m
+(?i)(dicing|blackjack|(flower)?poker|diceduel)\,\s?(dicing|blackjack|(flower)?poker|diceduel)
+(?i)human hosts
+(?i)truebets
+
+\\\\ Scam/RWT \\\\
+(?i)reward(ing)? kindness
+(?i)cheap(est)? bond
+(?i)(buy|sell|cheapest.*for) runescape g(old|p)
+(?i)show (me|your) inventory (to|for)
+(?i)free rune scimitar
+(?i)first person to spam.*?(win|get)s?
+(?i)s(\'|\.)?e(\'|\.)?(l|1|\|)(\'|\.)?(l|1|\|)\s?(cheap)?\s?(and|\&)?\s?(buy)?\s?g(\'|\.)?(o|0|\(\))(\'|\.)?(l|1|\|)(\'|\.)?d
+(?i)(doubl|tripl|quadrupl|increas)ing\s?(all)?\s?(g(\s?p|old)|money|cash|bank|items?)
+(?i)(increaisng|increaisng)\s?(all)?\s?(g(\s?p|old)|money|cash|bank|items?)
+(?i)^(first|who(ever)?).*?shows? (me)? \d*.*?(wins|gets)
+(?i)^quitting?.*? giving \d+ percent.*? (1|one) trade
+(?i)(trades?|shows?).*?bank.*?(wins?|gets?|recieves?)
+(?i)(trades?|shows?).*?bank.*?\d*\s?(percent|\%)
+(?i)quitting.*?\d{2} percent of what you show
+(?i)giving \d{2}% of what you show
+(?i)(2|two|too?) trade (doubl|tripl)ing
+(?i)(doubl|tripl|quadrupl)ing( last call)?.*?(2|two|too?)\s?trades?
+(?i)doubling gp or items \d+\s?[gkm] left
+(?i)^(doubl|tripl|quadrupl)ing\W
+(?i)free (membership|bond)
+(?i)giving away .*? pm me
+(?i)i do (1|one) trade (doubl|tripl)(e|ing)
+(?i)i'?ll (doubl|tripl)e your \d+\s?[gkm]
+(?i)quitting .*?giving \d+ percent.*? show
+(?i)quitting.*?shows? me \d+\s?[gkm].*?free \d+\s?[gkm]
+(?i)the first.*?won'?t regret it
+(?i)want to earn.*?money.*?account
+(?i)[0-9\.](.*?\/.*?)?u\ss\sd\s?\/\s?m
+(?i)b\s*e\s*s\s*t.*?legit.*?s\s*i\s*t\s*e
+(?i)^trade from .*?: \d+\s?[gkm]\s?$
